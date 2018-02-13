@@ -22,6 +22,9 @@ public class MortgagePayment {
 		monthlyPayment = Prompt("Please enter your mortgage payment: $", consoleScanner);
 		balance = Prompt("Please enter outstanding balance on mortgage: $", consoleScanner);
 
+		// Close the scanner
+        consoleScanner.close();
+        
 		// Calculations
 		monthlyInterest = balance * rate / 12;
 
